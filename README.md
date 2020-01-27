@@ -41,3 +41,7 @@ docker-compose up joget
 jconsole localhost:9999
 open http://localhost:4000
 ```
+
+## Resource
+
+- https://geekflare.com/enable-jmx-tomcat-to-monitor-administer
