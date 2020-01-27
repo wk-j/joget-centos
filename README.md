@@ -45,3 +45,4 @@ open http://localhost:4000
 ## Resource
 
 - https://geekflare.com/enable-jmx-tomcat-to-monitor-administer
+- https://www.jamasoftware.com/blog/monitoring-java-applications
