@@ -1,0 +1,13 @@
+> sqlcmd -S localhost -U sa -P abcABC123 -d jwdb -i config/jwdb-mssql-ddl.sql
+
+Warning! The maximum key length for a clustered index is 900 bytes. The index 'PK__app_data__0DF2A830C36DF437' has maximum length of 1029 bytes. For some combination of large values, the insert/update operation will fail.
+Warning! The maximum key length for a clustered index is 900 bytes. The index 'PK__app_env___0DF2A830686F9DA6' has maximum length of 1029 bytes. For some combination of large values, the insert/update operation will fail.
+Warning! The maximum key length for a clustered index is 900 bytes. The index 'PK__app_form__1991076FCC406435' has maximum length of 1029 bytes. For some combination of large values, the insert/update operation will fail.
+Warning! The maximum key length for a clustered index is 900 bytes. The index 'PK__app_mess__2F8FB386BFDFEB8D' has maximum length of 1029 bytes. For some combination of large values, the insert/update operation will fail.
+Warning! The maximum key length for a clustered index is 900 bytes. The index 'PK__app_pack__692F99A61B15E1C1' has maximum length of 1539 bytes. For some combination of large values, the insert/update operation will fail.
+Warning! The maximum key length for a clustered index is 900 bytes. The index 'PK__app_pack__692F99A653009959' has maximum length of 1539 bytes. For some combination of large values, the insert/update operation will fail.
+Warning! The maximum key length for a clustered index is 900 bytes. The index 'PK__app_pack__343D470190E99E98' has maximum length of 1539 bytes. For some combination of large values, the insert/update operation will fail.
+Warning! The maximum key length for a clustered index is 900 bytes. The index 'PK__app_plug__0DF2A8306ACCE1EB' has maximum length of 1029 bytes. For some combination of large values, the insert/update operation will fail.
+Warning! The maximum key length for a clustered index is 900 bytes. The index 'PK__app_user__0DF2A830FE5C5ABC' has maximum length of 1029 bytes. For some combination of large values, the insert/update operation will fail.
+Msg 2714, Level 16, State 6, Server 5f94fba8745c, Line 414
+There is already an object named 'dir_department' in the database.

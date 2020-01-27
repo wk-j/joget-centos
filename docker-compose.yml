@@ -1,0 +1,26 @@
+version: "3.1"
+
+services:
+  joget:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    volumes:
+      - ./config/app_datasource.properties:/joget/wflow/app_datasource.properties
+      # - ./config/app_datasource.properties:/root/wflow/app_datasource.properties
+      - ./config/app_datasource-mssql.properties:/joget/wflow/app_datasource-mssql.properties
+      - ./logs:/joget/apache-tomcat-8.5.41/logs
+
+    ports:
+      - 8080:8080
+
+  sql-server:
+    image: mcr.microsoft.com/mssql/server:2019-GA-ubuntu-16.04
+    ports:
+      - 1433:1433
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=abcABC123
+    volumes:
+      - /var/opt/mssql
