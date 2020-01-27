@@ -8,12 +8,14 @@ services:
 
     volumes:
       - ./config/app_datasource.properties:/joget/wflow/app_datasource.properties
-      # - ./config/app_datasource.properties:/root/wflow/app_datasource.properties
       - ./config/app_datasource-mssql.properties:/joget/wflow/app_datasource-mssql.properties
       - ./logs:/joget/apache-tomcat-8.5.41/logs
+      - ./config/admin.json:/glowroot/admin.json
 
     ports:
       - 8080:8080
+      - 9999:9999
+      - 4000:4000
 
   sql-server:
     image: mcr.microsoft.com/mssql/server:2019-GA-ubuntu-16.04
