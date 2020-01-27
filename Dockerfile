@@ -3,6 +3,9 @@ MAINTAINER Marco Palladino, marco@mashape.com
 
 RUN yum update
 RUN yum install java-1.8.0-openjdk-devel -y
+RUN yum install net-tools -y
+RUN yum install iftop -y
+RUN yum install lsof -y
 
 COPY joget/joget-linux-6.0.25 /joget
 COPY glowroot/glowroot /glowroot

@@ -39,9 +39,9 @@ docker-compose up joget
 ## 6. Monitor
 
 ```bash
-jconsole localhost:9999
 open http://localhost:4000
-bash <(curl -Ss https://my-netdata.io/kickstart-static64.sh)
+lsof
+netstat
 ```
 
 ## Connection
@@ -54,3 +54,4 @@ jdbc:sqlserver://sql-server:1433;DatabaseName=jwdb;SelectMethod=cursor
 
 - https://geekflare.com/enable-jmx-tomcat-to-monitor-administer
 - https://www.jamasoftware.com/blog/monitoring-java-applications
+- https://www.tecmint.com/command-line-tools-to-monitor-linux-performance
