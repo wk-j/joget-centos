@@ -26,7 +26,8 @@ docker-compose up
 ```bash
 sqlcmd -S localhost -U sa -P abcABC123 -Q "CREATE DATABASE jwdb"
 sqlcmd -S localhost -U sa -P abcABC123 -d jwdb -i config/jwdb-mssql-ddl.sql
-sqlcmd -S localhost -U sa -P abcABC123 -d jwdb -i config/jwdb-mssql-ddl.sql
+sqlcmd -S localhost -U sa -P abcABC123 -d jwdb -i config/view-employee.sql
+sqlcmd -S localhost -U sa -P abcABC123 -d jwdb -i config/load-csv.sql
 ```
 
 ### 5. Start Joget
@@ -40,6 +41,13 @@ docker-compose up joget
 ```bash
 jconsole localhost:9999
 open http://localhost:4000
+bash <(curl -Ss https://my-netdata.io/kickstart-static64.sh)
+```
+
+## Connection
+
+```bash
+jdbc:sqlserver://sql-server:1433;DatabaseName=jwdb;SelectMethod=cursor
 ```
 
 ## Resource

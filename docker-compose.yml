@@ -17,6 +17,7 @@ services:
       - 9000:9000
       - 9001:9001
       - 4000:4000
+      - 19999:19999
 
   sql-server:
     image: mcr.microsoft.com/mssql/server:2019-GA-ubuntu-16.04
@@ -26,4 +27,8 @@ services:
       - ACCEPT_EULA=Y
       - SA_PASSWORD=abcABC123
     volumes:
-      - /var/opt/mssql
+      - sqlvolume:/var/opt/mssql
+      - ./app/view_employee_202001271511.csv:/csv/data.csv
+
+volumes:
+  sqlvolume:
