@@ -6,7 +6,8 @@ RUN yum install java-1.8.0-openjdk-devel -y
 RUN yum install net-tools -y
 RUN yum install lsof -y
 
-COPY joget/joget-linux-6.0.25 /joget
+# COPY joget/joget-linux-6.0.25 /joget
+COPY joget/joget-enterprise-linux-6.0.25 /joget
 COPY glowroot/glowroot /glowroot
 
 WORKDIR /joget

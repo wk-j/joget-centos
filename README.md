@@ -1,10 +1,20 @@
 ## 1. Download Joget
 
+*Community*
+
 ```bash
 mkdir joget
 wget -O joget/joget-linux-6.0.25.tar.gz \
     https://sourceforge.net/projects/jogetworkflow/files/joget-linux-6.0.25.tar.gz/download
 tar -xvf joget/joget-linux-6.0.25.tar.gz -C joget
+```
+
+*Enterprise*
+
+```bash
+wget -O joget/joget-enterprise-linux-6.0.25.tar.gz \
+     https://www.joget.org/downloads/enterprise/joget-enterprise-linux-6.0.25.tar.gz
+tar -xvf joget/joget-enterprise-linux-6.0.25.tar.gz -C joget
 ```
 
 ## 2. Download Glowroot
