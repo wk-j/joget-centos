@@ -38,6 +38,13 @@ sqlcmd -S localhost -U sa -P abcABC123 -Q "CREATE DATABASE jwdb"
 sqlcmd -S localhost -U sa -P abcABC123 -d jwdb -i config/jwdb-mssql-ddl.sql
 sqlcmd -S localhost -U sa -P abcABC123 -d jwdb -i config/view-employee.sql
 sqlcmd -S localhost -U sa -P abcABC123 -d jwdb -i config/load-csv.sql
+sqlcmd -S localhost -U sa -P abcABC123 -d jwdb -i config/app_fd_tip_budget_type_202001281628.sql
+
+sqlcmd -S localhost -U sa -P abcABC123 -d jwdb -i sql/max.sql
+sqlcmd -S localhost -U sa -P abcABC123 -d jwdb -i sql/lock.sql
+sqlcmd -S localhost -U sa -P abcABC123 -d jwdb -i sql/c.sql
+sqlcmd -S localhost -U sa -P abcABC123 -d jwdb -i sql/collation.sql
+sqlcmd -S localhost -U sa -P abcABC123 -d jwdb -i sql/change-collation.sql
 ```
 
 ### 5. Start Joget
