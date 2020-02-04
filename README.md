@@ -12,6 +12,7 @@ tar -xvf joget/joget-linux-6.0.25.tar.gz -C joget
 *Enterprise*
 
 ```bash
+mkdir joget
 wget -O joget/joget-enterprise-linux-6.0.25.tar.gz \
      https://www.joget.org/downloads/enterprise/joget-enterprise-linux-6.0.25.tar.gz
 tar -xvf joget/joget-enterprise-linux-6.0.25.tar.gz -C joget
@@ -28,6 +29,7 @@ unzip glowroot/glowroot-0.13.5-dist.zip -d glowroot
 ## 3. Start SQL Server
 
 ```bash
+docker-compose up sql-server
 docker-compose up
 ```
 
